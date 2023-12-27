@@ -1,10 +1,6 @@
 const Card=(props) =>{
     return(
-        <>{
-            props.map(()=>{
-                return
-            })
-        }
+        <>
 
         </>
     );
