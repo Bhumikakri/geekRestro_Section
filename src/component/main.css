@@ -1,0 +1,24 @@
+.main{
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.FilterInput{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    border: 2px solid red;
+}
