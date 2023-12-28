@@ -12,7 +12,11 @@ const Main = () => {
 
 
     function restroName(e){
-        setrestroval(e.target.value);
+        let filteredData = Data.filter((data)=>{
+      return (data.type_of_food.toLowerCase().includes(e.target.value.toLowerCase()))
+      })
+      setrestroval(e.target.value);
+      setrestoData(filteredData);
     }
 
   return (
@@ -21,11 +25,19 @@ const Main = () => {
             <input type='text' value={restroval} placeholder='Search resturants...' onChange={restroName}/>
             <span>
             Minimum Rating:
-            <input type='number' value={rate} onChange={(e)=>setrate(e.target.value)}/>
+            <input type='number' className='number' value={rate} onChange={(e)=>{setrate(e.target.value);
+            let filteredData = Data.filter((data)=>{
+              return (data.rating>=e.target.value)
+            })
+            setrestoData(filteredData);
+            }}/>
             </span>
         </div>
-        <div>
-          <Card passingData={[restoData]}/>
+        <div className='AllCard'>
+          {
+            restoData.map((data)=><Card {...data}/>
+            )
+          }
         </div>
     </div>
   );

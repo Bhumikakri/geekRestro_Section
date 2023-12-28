@@ -4,7 +4,7 @@
     position: absolute;
     top: 4rem;
     left: 0;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,34 @@
     width: 100%;
     display: flex;
     padding: 1rem;
+    padding-right: 7rem;
+    padding-bottom: 0;
     justify-content: space-between;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    font-size: 1.3rem;
+}
+.number{
+    margin-left: 1rem;
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 0.7rem;
+    border: none;
+    /* border: 1px dotted gray; */
+    background-color: rgb(233, 233, 233);
+    box-shadow: 2px 5px 4px gray;
+    color: rgb(7, 78, 50);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.AllCard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    /* border: 2px solid rgb(255, 238, 0); */
 }
